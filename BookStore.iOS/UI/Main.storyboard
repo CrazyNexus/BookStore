@@ -152,7 +152,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9DJ-YD-ktP" misplaced="YES">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9DJ-YD-ktP" misplaced="YES">
                                 <rect key="frame" x="16" y="84" width="343" height="521"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqy-cE-jVX" misplaced="YES">
@@ -180,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6v6-Y8-qPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1556.8" y="-105.4003"/>
+            <point key="canvasLocation" x="1736.8" y="-99.4003"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="agp-tZ-yBI">
@@ -201,12 +201,12 @@
             <point key="canvasLocation" x="234.4" y="-98.50075"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedScreenMetrics key="destination" type="retina47"/>
-    </simulatedMetricsContainer>
     <resources>
         <image name="Images/Bild1.JPG" width="2816" height="2112"/>
         <image name="Images/Bild2.JPG" width="2816" height="2112"/>
         <image name="Images/Bild3.JPG" width="2816" height="2112"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
 </document>

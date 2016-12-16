@@ -18,21 +18,24 @@ namespace BookStore.iOS
             author = "Thomas Dubiel",
             name = "Diplomarbeit",
             editor = "Hans-Jürgen Pfenning",
-            year = 1996
+            year = 1996,
+            imagePath = "Images/Bild1.JPG"
          });
          bookList.Add(new Book()
          {
             author = "Silja Dubiel",
             name = "Regeln der Ehe",
             editor = "Mariana Schumann",
-            year = 2012
+            year = 2012,
+            imagePath = "Images/Bild2.JPG"
          });
          bookList.Add(new Book()
          {
             author = "John Doe",
             name = "Wer bin ich?",
             editor = "John Smith",
-            year = 2014
+            year = 2014,
+            imagePath = "Images/Bild3.JPG"
          });
       }
 
@@ -55,6 +58,18 @@ namespace BookStore.iOS
 
          return cell;
       }
+
+      public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+      {
+         if (segue.Identifier == "showDetails")
+         {
+            var controller = segue.DestinationViewController as DetailsViewController;
+
+            var indexPath = TableView.IndexPathForSelectedRow;
+            var selectedData = bookList[indexPath.Row];
+            controller.bookData = selectedData;
+         }
+      }
    }
 
    public class Book
@@ -63,5 +78,6 @@ namespace BookStore.iOS
       public string author;
       public string editor;
       public int year;
+      public string imagePath;
    }
 }

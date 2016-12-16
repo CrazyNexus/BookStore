@@ -98,10 +98,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Controller\" />
+    <Folder Include="UI\" />
+    <Folder Include="Controller\Cells\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="LaunchScreen.storyboard" />
-    <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="UI\LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="UI\Main.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -110,14 +114,23 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="BooksTableViewController.cs" />
-    <Compile Include="BooksTableViewController.designer.cs">
+    <Compile Include="Controller\BooksTableViewController.cs" />
+    <Compile Include="Controller\BooksTableViewController.designer.cs">
       <DependentUpon>BooksTableViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="BookTableViewCell.cs" />
-    <Compile Include="BookTableViewCell.designer.cs">
+    <Compile Include="Controller\Cells\BookTableViewCell.cs" />
+    <Compile Include="Controller\Cells\BookTableViewCell.designer.cs">
       <DependentUpon>BookTableViewCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controller\DetailsViewController.cs" />
+    <Compile Include="Controller\DetailsViewController.designer.cs">
+      <DependentUpon>DetailsViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\Bild1.JPG" />
+    <BundleResource Include="Images\Bild2.JPG" />
+    <BundleResource Include="Images\Bild3.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
